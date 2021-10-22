@@ -1,26 +1,36 @@
 package com.savingAccount;
 
 public class SavingAccount {
-
-	public static void main(String[] args) {
-		System.out.println("Welcome to Banking Application");
-		//object creation
-		SavingBalance saver1 = new SavingBalance(2000.00);
-		SavingBalance saver2 = new SavingBalance(3000.00);
-		
-		//calculate monthly interest rate
-		SavingBalance.setAnnualInterestRate(4.00);
-		saver1.calculateMonthlyInterestRate();
-		
-		SavingBalance.setAnnualInterestRate(5.00);
-		saver2.calculateMonthlyInterestRate();
-		
-		//print
-		System.out.println("saver 1 :"+saver1);
-		System.out.println("Saver 2: "+saver2);
-		
-		
-
+	//variable declaration
+	static double annualInterestRate;
+	private double savingBalance;
+	
+	//constructor 
+	public SavingAccount(double savingBalance) {
+		super();
+		this.savingBalance = savingBalance;
 	}
+
+	public double getSavingBalance() {
+		return savingBalance;
+	}
+	
+	public static void setAnnualInterestRate(double annualInterestRate) {
+		SavingAccount.annualInterestRate = annualInterestRate;
+	}
+
+	//method calculate Monthly InterestRate
+	public double calculateMonthlyInterestRate() {
+		double interestRate = (savingBalance * annualInterestRate)/12;
+		savingBalance = savingBalance + interestRate;
+		System.out.println("Monthly interest rate :"+ interestRate);
+		return interestRate;
+	}
+	
+	
+
+
+	
+	
 
 }
