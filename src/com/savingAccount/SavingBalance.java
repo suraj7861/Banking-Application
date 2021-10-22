@@ -4,7 +4,8 @@ public class SavingBalance {
 	//variable declaration
 	static double annualInterestRate = 12.00;
 	private double savingBalance;
-
+	
+	//constructor 
 	public SavingBalance(double savingBalance) {
 		super();
 		this.savingBalance = savingBalance;
@@ -12,10 +13,6 @@ public class SavingBalance {
 
 	public double getSavingBalance() {
 		return savingBalance;
-	}
-	
-	public static void setAnnualInterestRate(double annualInterestRate) {
-		SavingBalance.annualInterestRate = annualInterestRate;
 	}
 	
 	//method calculate Monthly InterestRate
