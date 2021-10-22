@@ -2,7 +2,7 @@ package com.savingAccount;
 
 public class SavingBalance {
 	//variable declaration
-	static double annualInterestRate = 12.00;
+	static double annualInterestRate = 4.00;
 	private double savingBalance;
 	
 	//constructor 
