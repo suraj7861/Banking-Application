@@ -9,7 +9,10 @@ public class SavingAccount {
 		SavingBalance saver2 = new SavingBalance(3000.00);
 		
 		//calculate monthly interest rate
+		SavingBalance.setAnnualInterestRate(4.00);
 		saver1.calculateMonthlyInterestRate();
+		
+		SavingBalance.setAnnualInterestRate(5.00);
 		saver2.calculateMonthlyInterestRate();
 		
 		//print
