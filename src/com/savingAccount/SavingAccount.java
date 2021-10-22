@@ -24,13 +24,9 @@ public class SavingAccount {
 		double interestRate = (savingBalance * annualInterestRate)/12;
 		savingBalance = savingBalance + interestRate;
 		System.out.println("Monthly interest rate :"+ interestRate);
+		System.out.println("banlance :"+ savingBalance);
 		return interestRate;
 	}
 	
 	
-
-
-	
-	
-
 }
