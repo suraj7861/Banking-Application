@@ -13,8 +13,8 @@ public class SavingAccount {
 		saver2.calculateMonthlyInterestRate();
 		
 		//print
-		System.out.println("saver 1 :"saver1);
-		System.out.println("Saver 2: "saver2);
+		System.out.println("saver 1 :"+saver1);
+		System.out.println("Saver 2: "+saver2);
 		
 		
 
