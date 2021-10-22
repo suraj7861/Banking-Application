@@ -11,20 +11,27 @@ public class BankAccount {
 		//calculate monthly interest rate
 		SavingAccount.setAnnualInterestRate(4.00);
 		//saver 1
+		System.out.println("Calculate Monthly bank balance for saver1 ");
 		saver1.calculateMonthlyInterestRate();
 		System.out.println("Monthly bank balance for saver1 is: " + saver1 );
+		System.out.println("------------------------------------------------");
 		//saver 2
+		System.out.println("Calculate Monthly bank balance for saver2 ");
 		saver2.calculateMonthlyInterestRate();
-		System.out.println("Monthly bank balance for saver1 is: " + saver1 );
+		System.out.println("Monthly bank balance for saver2 is: " + saver2 );
+		System.out.println("------------------------------------------------");
 		
 		//calculate monthly interest rate
 		SavingAccount.setAnnualInterestRate(5.00);
 		//saver 1
+		System.out.println("Calculate Monthly bank balance for saver1 ");
 		saver1.calculateMonthlyInterestRate();
 		System.out.println("Monthly bank balance for saver1 is: " + saver1 );
+		System.out.println("------------------------------------------------");
 		//saver 2
+		System.out.println("Calculate Monthly bank balance for saver2 ");
 		saver2.calculateMonthlyInterestRate();
-		System.out.println("Monthly bank balance for saver1 is: " + saver1 );
+		System.out.println("Monthly bank balance for saver2 is: " + saver2 );
 
 	}
 

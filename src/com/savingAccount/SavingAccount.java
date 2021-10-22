@@ -21,11 +21,15 @@ public class SavingAccount {
 
 	//method calculate Monthly InterestRate
 	public double calculateMonthlyInterestRate() {
-		double interestRate = (savingBalance * annualInterestRate)/12;
-		savingBalance = savingBalance + interestRate;
-		System.out.println("Monthly interest rate :"+ interestRate);
-		System.out.println("banlance :"+ savingBalance);
-		return interestRate;
+		double interest = (savingBalance * annualInterestRate)/12;
+		savingBalance = savingBalance + interest;
+		System.out.println("Monthly interest :"+ interest);
+		return interest;
+	}
+
+	@Override
+	public String toString() {
+		return " [savingBalance=" + savingBalance + "]";
 	}
 	
 	
