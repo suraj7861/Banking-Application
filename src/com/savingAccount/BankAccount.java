@@ -11,8 +11,10 @@ public class BankAccount {
 		//calculate monthly interest rate
 		SavingAccount.setAnnualInterestRate(4.00);
 		saver1.calculateMonthlyInterestRate();
+		saver2.calculateMonthlyInterestRate();
 		
 		SavingAccount.setAnnualInterestRate(5.00);
+		saver1.calculateMonthlyInterestRate();
 		saver2.calculateMonthlyInterestRate();
 		
 		//print
